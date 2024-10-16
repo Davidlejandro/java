@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a js</title>
+</head>
+<body>
+
+    <h1>Introduccion a javascript</h1>
+    <!--Esto es ya parte de la programación (Colocar script)-->
+    <script>
+        //El alert se utiliza para mandar una alerta
+        alert("Hola mundo");
+        //Indica que se escribirá el hola mundo en el documento
+        document.write("Hola mundo");
+        //Indica que el hola mundo se colocara en la parte de la consola al inspeccionar elementos
+        console.log("Hola mundo");
+        //Variable, es un espacio de memoria que está sujeta a cambios, dicha información estará disponible solo mientras se utiliza la página, si se refresca se eliminará dicha información
+        var nombre="Daivd";
+        //Le estamos solicitando que salga una alerta con la variable "Nombre"
+        alert(nombre) 
+        var edad=16;
+        //Estamos concatenando diferentes variables en una misma parte de la consola
+        console.log("El nombre del estudiante es: "+ nombre + " y tiene " + edad +" años ")
+        //Le estamos solicitando al usuario que coloque su apellido y dicha información se almacenara en la variable apellido, pero se almacenara por tiempo limitado
+        //Si no tiene ningún valor después de que se le solicite dicha variable del apellido pasara a null
+        var apellido= prompt("Ingrese el apellido del estudiante");
+        //Tipos de variables
+        //Numéricas
+        //Una variable nunca va a empezar con un número, con ?, %,
+        //El % calcula el módulo de una división
+        var edad1=31;
+        var direccion="El beaterio";
+        //Un arreglo es un espacio de memoria, cada espacio de memoria se subdivide y en cada subespacio 
+        //nosotros almacenaremos información
+        //El índice es el inicio de nuestro arreglo y siempre empezara desde 0
+        //El tamaño del arreglo es según la cantidad de información que tengamos, en este caso 4
+        var amigos=["Luis", "Carlos","Carina","Norma"]
+        //boleano
+        //Son variables que pueden ser tanto verdaderas como falsas
+        var boleano=true;
+        //Undefined
+        //Datos que no contiene ningún tipo de información(texto, números, etc.)
+        var ejemplo
+        //null
+        //El valor que sea null estará vacío, no tendrá ningún valor
+        var numero2=10;
+        var numero2=null;
+        //nan
+        //Nunca se va a poder multiplicar una variable de tipo string con algún valor de tipo numérico
+        //El valor string es para los textos 
+        var texto2="Hola como estas";
+        console.log(texto2*2);
+        //Arreglos
+        var amigos2=["David", "Carlos", "Maria", "Luis"];
+        console.log(amigos2[0]);
+        //Editar algún dato de algún arreglo
+        amigos2[1]="Dios";
+        console.log(amigos2);
+        //Vamos a obtener el tamaño de mi arreglo
+        //El length me recupera el tamaño de mi arreglo
+        console.log("Tienes "+ amigos2.length + " amigos")
+        //Vamos a añadir un elemento al final de mi arreglo
+        amigos2[amigos2.length]="Diego";
+        console.log(amigos2);
+        //Añadimos varios elementos al arreglo de una sola vez utilizando push
+        amigos2.push("Lenin","Alex","Fiona");
+        console.log(amigos2);
+        //Concatenar arreglos
+        //Creamos un amigos 3 y le decimos que amigos y amigos 2 se unan(Los 2 son arreglos) al utilizar el concat
+        var amigos3=amigos.concat(amigos2);
+        console.log(amigos3);
+        //Operadores matematicos
+        //suma +
+        //resta -
+        //multiplicacion *
+        //division /
+        //modulo %
+        var a=5;
+        var b=2;
+        var suma=a+b;
+        console.log("La suma de a mas b es:" + suma)
+        //La clase math me permite generar ecuaciones matematicas como la raiz cuadrada
+        var c=9
+        //sqrt es raiz cuadrada 
+        var d= Math.sqrt(c)
+        console.log("La raiz es " + d)
+        //Condicional
+        //Los operadores que utilizamos en una condicional son i y o
+        //La condicion i nos dice que tene que cumplir con todas las condiciones para que sea verdad
+        //La condicion o nos dice que tenemos que cumplir con una de las codiciones para que sea verdad
+        //&& adn
+        //!! or
+        if(d>5){
+            console.log("El valor es exaacto")
+        }else{
+            console.log("El valor no es exacto")
+        }
+
+    </script>
+</body>
+
+</html>
